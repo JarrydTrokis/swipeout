@@ -210,7 +210,9 @@ export default class Swipeout extends React.Component <SwipeoutPropType, any> {
               role="button"
               onClick={(e) => this.onBtnClick(e, btn)}
             >
-              <div className={`${prefixCls}-btn-text`}>{btn.text || 'Click'}</div>
+              <div className={`${prefixCls}-btn-text`}>
+                {btn.renderContent() || btn.text || 'Click'}
+              </div>
             </div>
           ))
         }

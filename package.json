@@ -28,7 +28,7 @@
   "main": "./lib/index",
   "module": "./es/index",
   "config": {
-    "port": 8000,
+    "port": 8383,
     "entry": {
       "rc-swipeout": [
         "./index.js",
